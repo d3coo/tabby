@@ -69,7 +69,7 @@ class _TabbyWebViewState extends State<TabbyWebView> {
         Expanded(
           child: InAppWebView(
             key: webViewKey,
-            initialUrlRequest: URLRequest(url: Uri.parse(widget.webUrl)),
+            initialUrlRequest: URLRequest(url: WebUri(widget.webUrl)),
             initialOptions: options,
             onProgressChanged:
                 (InAppWebViewController controller, int progress) {

@@ -60,7 +60,7 @@ class _TabbyPresentationSnippetState extends State<TabbyPresentationSnippet> {
       ),
     );
     _browser.open(
-      url: Uri.parse(
+      url: WebUri(
         '${snippetWebUrls[widget.lang]}'
         '?price=${widget.price}&currency=${widget.currency.displayName}$sdkQuery',
       ),

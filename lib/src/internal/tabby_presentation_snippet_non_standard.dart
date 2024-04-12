@@ -61,7 +61,7 @@ class _TabbyPresentationSnippetNonStantardState
       ),
     );
     _browser.open(
-      url: Uri.parse(
+      url: WebUri(
         '${snippetWebUrls[widget.lang]}'
         '?currency=${widget.currency.displayName}$sdkQuery&installmentsCount=0',
       ),
